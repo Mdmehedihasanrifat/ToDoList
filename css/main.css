@@ -1,3 +1,18 @@
+body{
+
+  font-family: "Roboto Light";
+  background: linear-gradient(90deg,#d705ee 10%,#3232e5 90%);
+}
+
+.container{
+
+
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
 h1{
 
   background: #3232e5;
@@ -9,46 +24,6 @@ h1{
   font-weight: normal;
 }
 
-ul{
-
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-body{
-
-  font-family: "Roboto Light";
-}
-
-li{
-  background: #ffffff;
-  height:40px;
-  line-height: 40px;
-  padding: 10px;
-}
-
-li:nth-child(2n){
-  background: #f7f7f7;
-}
-
-
-.container{
-
-
-  width: 360px;
-  margin: 100px auto;
-  background: #f7f7f7;
-  box-shadow: 0 0 3px rgba(0,0,0,.5);
-}
-
-
-.complete{
-
-  text-decoration: line-through;
-  color: grey;
-}
 .container input{
 
   font-size: 18px;
@@ -64,4 +39,52 @@ input:focus{
   background: #fff;
   border: 3px solid #3232e5;
   outline: none;
+}
+
+ul{
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+li{
+  background: #ffffff;
+  height:40px;
+  line-height: 40px;
+  padding: 1px;
+}
+
+li:nth-child(2n){
+  background: #f7f7f7;
+}
+
+
+
+.fa-plus{
+  float: right;
+}
+.complete{
+
+  text-decoration: line-through;
+  color: grey;
+}
+
+
+span{
+
+  height: 30px;
+  background: rgba(220, 12, 84, 0.93);
+  color: white;
+  display: none;
+  padding: 3px;
+  text-align: center;
+
+}
+li:hover span{
+
+  display: inline-block;
+  margin-right: 20px;
 }

@@ -39,6 +39,10 @@ if(event.which===13){
 
   let todo=$(this).val();
   $(this).val("");
-$("ul").append("<li><span>X</span> "+todo+"</li>");
+$("ul").append("<li><span><i class='fa fa-trash'></i></span> "+todo+"</li>");
 }
+})
+
+$('.fa-plus').on('click',function () {
+  $("input[type='text']").fadeToggle();
 })
